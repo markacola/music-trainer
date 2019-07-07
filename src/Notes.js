@@ -97,7 +97,9 @@ export default function Notes() {
           start listening
         </button>
       )}
-      <Video autoPlay muted srcObject={stream} />
+      <div>
+        <Video autoPlay muted srcObject={stream} />
+      </div>
       <canvas ref={canvas} width={350} height={100} />
       <Note note={note} />
     </section>
